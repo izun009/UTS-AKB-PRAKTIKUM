@@ -5,13 +5,13 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#FFFFFF</color>
     <color name="grey">#EBEBEB</color>
+    <color name="nearGrey">#6C6B6B</color>
     <color name="nearWhite">#EBEBEB</color>
 
     <color name="skipColor">#8C8787</color>
     <color name="indicator">#8C8787</color>
     <color name="green">#1AC520</color>
     <color name="black">#050505</color>
-    <color name="nearGrey">#6C6B6B</color>
 
 
 

@@ -1,16 +1,321 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="24dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Home" />
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:textSize="24dp"-->
+<!--        android:textColor="@color/colorPrimaryDark"-->
+<!--        android:text="Home" />-->
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background_apps"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_image"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:src="@drawable/me"
+            android:layout_marginTop="20dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/grey"/>
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/my_name"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <View
+            android:id="@+id/name_view"
+            android:layout_width="410dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/nearGrey" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/about"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            />
+
+        <View
+            android:id="@+id/about_view"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/nearGrey" />
+
+        <TextView
+            android:id="@+id/about_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/about_desc"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/my_interest"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <View
+            android:id="@+id/my_interest"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/nearGrey" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="@string/hobby"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/hobby_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/hobby"
+            android:maxWidth="85dp"
+            android:maxHeight="85dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/xbox" />
+
+        <TextView
+            android:id="@+id/playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_below="@+id/hobby_pic"
+            android:gravity="left"
+            android:text="@string/play_game"
+            android:textColor="@color/nearGrey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/makes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="157dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="@string/makes"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/makes_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/makes"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="147dp"
+            android:maxWidth="70dp"
+            android:maxHeight="70dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/foods" />
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_below="@+id/makes_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="143dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="@string/food"
+            android:textColor="@color/nearGrey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mikes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="@string/mikes"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mikes_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/mikes"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/makes_pic"
+            android:maxWidth="70dp"
+            android:maxHeight="70dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/glass" />
+
+        <TextView
+            android:id="@+id/drink"
+            android:layout_below="@+id/makes_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="@string/drink"
+            android:textColor="@color/nearGrey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/programmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+            android:gravity="left"
+            android:text="@string/Interest_linux"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/programmer_pic"
+            android:layout_below="@+id/programmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/website" />
+
+
+        <TextView
+            android:id="@+id/learn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_below="@+id/programmer_pic"
+            android:gravity="left"
+            android:text="@string/learn"
+            android:textColor="@color/nearGrey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cita_citaku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="95dp"
+            android:gravity="right"
+            android:text="@string/cita_cita"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cita_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/cita_citaku"
+            android:layout_toRightOf="@+id/programmer_pic"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/humanpictos" />
+
+        <TextView
+            android:id="@+id/devops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="90dp"
+            android:layout_below="@+id/cita_pic"
+            android:gravity="right"
+            android:text="@string/devops"
+            android:textColor="@color/nearGrey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

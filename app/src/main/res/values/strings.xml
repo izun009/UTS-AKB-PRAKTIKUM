@@ -3,4 +3,26 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_name">Muhamad Izzudin Wijaya</string>
+    <string name="about">About</string>
+    <string name="about_desc">Saya adalah seorang mahasiswa Universitas Komputer Indonesia.
+        Umur saya adalah 21 tahun, dan sekarang saya sedang menjalani perkuliahan di semester 6 tahun 2020.
+    </string>
+
+    <string name="my_interest">Interest</string>
+    <string name="hobby">HOBBY</string>
+    <string name="play_game">Play Game</string>
+
+    <string name="makes">MAKES</string>
+    <string name="food">Make Foods</string>
+
+    <string name="mikes">MIKES</string>
+    <string name="drink">Make Drinks</string>
+
+    <string name="Interest_linux">INTEREST</string>
+    <string name="learn">Learn Linux</string>
+
+    <string name="cita_cita">GOALS</string>
+    <string name="devops">Devops</string>
+
 </resources>
