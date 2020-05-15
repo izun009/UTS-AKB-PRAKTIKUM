@@ -21,7 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/background_apps"
         android:gravity="center">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -138,7 +137,7 @@
             android:maxHeight="85dp"
             android:scaleType="fitCenter"
             android:layout_marginLeft="30dp"
-            android:src="@drawable/xbox" />
+            android:src="@drawable/playstation" />
 
         <TextView
             android:id="@+id/playing"
@@ -177,7 +176,7 @@
             android:maxWidth="70dp"
             android:maxHeight="70dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/foods" />
+            android:src="@drawable/food" />
 
         <TextView
             android:id="@+id/food"
@@ -217,7 +216,7 @@
             android:maxWidth="70dp"
             android:maxHeight="70dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/glass" />
+            android:src="@drawable/beverage" />
 
         <TextView
             android:id="@+id/drink"
@@ -261,7 +260,7 @@
             android:maxWidth="80dp"
             android:maxHeight="80dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/website" />
+            android:src="@drawable/squares" />
 
 
         <TextView
@@ -300,7 +299,7 @@
             android:maxWidth="80dp"
             android:maxHeight="80dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/humanpictos" />
+            android:src="@drawable/avatar" />
 
         <TextView
             android:id="@+id/devops"

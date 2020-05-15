@@ -11,6 +11,13 @@ import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import kotlinx.android.synthetic.main.activity_slider_page.*
 
+/**
+ * Nama : M Izzudin Wijaya
+ * NIM  : 10117152
+ * Waktu Pembuatan : 11 Mei 2020
+ *
+ * */
+
 class SliderPage : AppCompatActivity() {
 
     private val introSliderAdapter = IntroSliderAdapter(

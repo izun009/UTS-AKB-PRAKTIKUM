@@ -1,10 +1,18 @@
 package com.example.izzun
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+
+/**
+ * Nama : M Izzudin Wijaya
+ * NIM  : 10117152
+ * Waktu Pembuatan : 11 Mei 2020
+ *
+ * */
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,8 +34,12 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.music -> {
-                println("Music Pressed")
-                replaceFragment(MusicFragment())
+                println("Media Pressed")
+//                replaceFragment(MusicFragment())
+//                return@OnNavigationItemSelectedListener true
+                val intent = Intent(this, MediaFragment::class.java)
+                startActivity(intent)
+                overridePendingTransition(R.anim.enter_up,R.anim.stop_animation)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.profile -> {

@@ -3,11 +3,17 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_name">Name : </string>
+    <string name="txt_about">About : </string>
+
     <string name="my_name">Muhamad Izzudin Wijaya</string>
     <string name="about">About</string>
     <string name="about_desc">Saya adalah seorang mahasiswa Universitas Komputer Indonesia.
         Umur saya adalah 21 tahun, dan sekarang saya sedang menjalani perkuliahan di semester 6 tahun 2020.
     </string>
+
+    <string name="about_profile">Mahasiswa Universitas Komputer Indonesia Semester 6 tahun 2020.</string>
+
 
     <string name="my_interest">Interest</string>
     <string name="hobby">HOBBY</string>
@@ -24,5 +30,34 @@
 
     <string name="cita_cita">GOALS</string>
     <string name="devops">Devops</string>
+
+    <string name="top_profile">Profile</string>
+    <string name="contact_me">Contact Me</string>
+
+    <string name="instagram">Instagram</string>
+    <string name="gmail">Gmail</string>
+    <string name="phone">Phone</string>
+
+    <string name="find_me">Find Me</string>
+    <string name="my_maps">My Location</string>
+
+    <string name="my_apps">Izzun Apps</string>
+    <string name="version_apps">Version 1.1</string>
+    <string name="title_activity_daily_activity">daily_activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="judul_img">Judul</string>
+    <string name="description_img">Description</string>
+
+    <string name="text_music_video">Music &amp; Video</string>
+    <string name="judul_music">Judul</string>
+    <string name="description_music">Description</string>
+
+    <string name="my_gallery">Gallery</string>
+
+    <string name="media_music">Music</string>
+    <string name="media_video">Video</string>
+
 
 </resources>

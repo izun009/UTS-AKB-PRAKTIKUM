@@ -4,6 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
+/**
+ * Nama : M Izzudin Wijaya
+ * NIM  : 10117152
+ * Waktu Pembuatan : 11 Mei 2020
+ *
+ * */
+
 class SplashScreen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +20,7 @@ class SplashScreen : AppCompatActivity() {
         val background = object : Thread() {
             override fun run() {
                 try {
-                    Thread.sleep(5000)
+                    Thread.sleep(3000)
 
                     val intent = Intent(baseContext, SliderPage::class.java)
                     startActivity(intent)

@@ -7,6 +7,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * Nama : M Izzudin Wijaya
+ * NIM  : 10117152
+ * Waktu Pembuatan : 11 Mei 2020
+ *
+ * */
+
 class IntroSliderAdapter(private val introSlides: List<IntroSlide>) :
     RecyclerView.Adapter<IntroSliderAdapter.IntroSlideViewHolder>() {
 
